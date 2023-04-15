@@ -10,24 +10,23 @@ public class Hippo {
      * Member variables
      */
     String location;
+    String hippoName;
+    Color bodyColor;
     int startNeckSpeed = 15;
     int neckMoveDistance = 100;
 
     /*
      * Constructor
      */
-    public Hippo(String location) {
+    public Hippo(String location, String name, Color color) {
         this.location = location;
+        this.hippoName = name;
+        this.bodyColor = color;
         
         setupPosition();
     }
     
     void draw(Graphics g) {
-        /*
-         * Local variables
-         */
-        Color bodyColor = Color.GRAY;
-        String hippoName = "Hippie Hippo";
         
         drawScore(g, hippoName);
         
